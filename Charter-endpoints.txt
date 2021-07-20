@@ -1,0 +1,64 @@
+http://localhost:9001/customer/saveCustomer
+
+{
+    "cutomerName":"Hanumath Narapuram",
+    "address":"VA,USA",
+    "email": "forcharter@gmail.com",
+    "phone": "893-434-5543"
+}
+
+http://localhost:9001/customer/findAllCustomers
+
+http://localhost:9002/custTransaction/saveCustomerTransaction
+
+{
+    "customerId":"1",
+    "transactionDate": "2021-06-06",
+    "amountSpent":"153.00"
+}
+
+{
+    "customerId":"1",
+    "transactionDate": "2021-05-06",
+    "amountSpent":"103.00"
+}
+
+{
+    "customerId":"2",
+    "transactionDate": "2021-07-06",
+    "amountSpent":"103.00"
+}
+http://localhost:9002/custTransaction/getLast3MonthsTransactions
+
+
+http://localhost:9003/rewards/findRewardsByCustomerId/1
+
+{
+    "customerId": 1,
+    "rewardPerMonthMap": {
+        "202107": 6
+    },
+    "rewardPointsTotal": 6
+}
+
+
+http://localhost:9003/rewards/findAllCustomerRewards
+
+ {
+        "customerId": 1,
+        "rewardPerMonthMap": {
+            "202107": 6
+        },
+        "rewardPointsTotal": 6
+    },
+    {
+        "customerId": 2,
+        "rewardPerMonthMap": {
+            "202107": 162,
+            "202105": 162
+        },
+        "rewardPointsTotal": 324
+    }
+]
+
+
